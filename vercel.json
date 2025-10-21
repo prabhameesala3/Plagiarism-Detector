@@ -11,5 +11,14 @@
       "src": "/(.*)",
       "dest": "/api/app.py"
     }
-  ]
+  ],
+  "build": {
+    "excludes": [
+      "model.pkl",
+      "tfidf_vectorizer.pkl",
+      "dataset.csv",
+      "*.ipynb",
+      "Building Plagiarism checker using Machine Learning.ipynb (1).txt"
+    ]
+  }
 }
