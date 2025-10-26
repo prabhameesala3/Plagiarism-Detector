@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plagiarism Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #a8edea, #fed6e3);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    h1 img {
+      width: 40px;
+      height: 40px;
+    }
+    textarea {
+      width: 90%;
+      height: 100px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.05);
+      color: #333;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+    }
+    footer strong {
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><img src="https://cdn-icons-png.flaticon.com/512/3048/3048190.png" alt="Detective"> Plagiarism Detector</h1>
+    <form action="/detect" method="post">
+      <textarea name="text1" placeholder="Enter first text here..."></textarea>
+      <textarea name="text2" placeholder="Enter second text here..."></textarea><br>
+      <button type="submit">Check Plagiarism</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Developed by <strong>Prabha M</strong></p>
+  </footer>
+</body>
+</html>
